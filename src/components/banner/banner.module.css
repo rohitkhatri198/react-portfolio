@@ -1,0 +1,158 @@
+/* banner */
+.banner {
+    display: flex;
+    gap: 4vw;
+    padding:  12vw 5rem;
+  }
+  .banner .info {
+    width: 63.8vw;
+  }
+  .header {
+
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6vw;
+    line-height: 80px;
+    color: #efefef;
+    width: 30vw;
+    transition: transform 0.6s ease;
+    margin: 0 0 0 -2rem;
+  }
+  .header:hover > .wobble {
+    transform: translateX(2rem);
+  }
+  .wobble {
+    /* animation: blink 0.7s infinite; */
+  }
+  .desc {
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    /* width: 38vw; */
+    font-size: 1.458vw;
+    line-height: 30px;
+    padding: 2rem 0 2.6rem;
+    /* Dark Color */
+  
+    color: #efefef;
+  }
+  /* .button2 {
+      background: white;
+      color: rgb(33, 60, 238);
+      /* color: #efefef; */
+  /* border-radius: 10px; */
+  /* border: none;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7vw;
+    line-height: 29px;
+    padding: 1rem 1.5rem;
+    transition: transform .2 ease;   */
+  /* 
+  .button2:active{
+      transform: scale(0.96);
+  } */
+  
+  .button {
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    background: rgb(33, 60, 238);
+    border-radius: 10px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7vw;
+    line-height: 29px;
+    padding: 1rem 1.5rem;
+    color: #ffffff;
+    border: none;
+    /* width: 11vw;    */
+    text-align: center;
+    user-select: none;
+    animation: popIn 0.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 4s;
+  }
+  
+  .button:hover {
+    transform: translateY(-3rem);
+  }
+  .button:active {
+    transform: scale(0.96);
+    transition: transform 0.2s ease;
+  }
+  .imgSection {
+    display: inline-block;
+    perspective: 600px;
+  }
+  .card {
+    /* position: relative; */
+    /* width: 100%; */
+    height: 21vw;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+    border-radius: 50%;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    background-color: rgb(23, 26, 31);
+  }
+  
+  .card__face {
+    /* position: absolute; */
+    /* width: 100%; */
+    height: 2vw;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+  }
+  .card .back-side {
+    /* background: slateblue; */
+    transform: rotateY(180deg);
+  }
+  .profile {
+    width: 21vw;
+  }
+  .typed{
+    text-align: left;
+    display:block;
+    width: 100%;
+  word-wrap: normal;
+    /* overflow: hidden; */
+    /* animation: typing 5s steps(60, end) forwards; */
+  }
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  /* @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  } */
