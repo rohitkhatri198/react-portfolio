@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./contact.module.css"
+import s from "./contact.module.css";
 function Contact() {
   return (
     <div>
@@ -12,28 +12,30 @@ function Contact() {
         </p>
         <div className={s.contactUsCont}>
           <div className={s.contactInfo}>
-            <form id="contact-form">    
+            <form id="contact-form">
               <div className={s.textFields}>
-                <input
-                  type="text"
-                  className={s.name}
-                  placeholder="Name"
+                <div
+                  className={s.input}
                   data-aos="fade-up"
                   data-aos-delay="600"
-                />
-                <input
-                  type="text"
-                  className={s.email}
-                  placeholder="Email"
+                >
+                  <div className={s.title}>Name</div>
+                  <input type="text" className={s.name} />
+                </div>
+                <div
+                  className={s.input}
                   data-aos="fade-up"
                   data-aos-delay="700"
-                />
+                >
+                  <div className={s.title}>Email</div>
+                  <input type="text" className={s.email} />
+                </div>
               </div>
-              <textarea
+              {/* <textarea
                 placeholder="Message"
                 data-aos="fade-right"
                 data-aos-delay="800"
-              ></textarea>
+              ></textarea> */}
               <button
                 type="submit"
                 id="submit"
@@ -47,7 +49,7 @@ function Contact() {
           </div>
 
           <img
-            src="/images/contact.png"
+            src="/images/dev.png"
             className={s.pic}
             data-aos="zoom-in"
             data-aos-delay="900"

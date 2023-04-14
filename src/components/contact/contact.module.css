@@ -1,127 +1,137 @@
 .contactUs {
-    padding: 5rem 0 2rem;
-    overflow: hidden;
-  }
-  
-  .contactUs h3 {
-    text-align: center;
-    color: #efefef;
-    font-family: "Heebo";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3.6vw;
-    margin-bottom: 2rem;
-  }
-  
-  .contactUs p {
-    color: #efefef;
-    font-family: "Heebo";
-    font-size: 1.5vw;
-  }
-  .contactUsCont {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5vw;
-  }
-  
-  .contactUsCont .pic {
-    width: 45vw;
-  }
-  
-  form {
-    padding: 8rem 0;
-  }
-  form .textFields {
-    display: flex;
-    gap: 2vw;
-    padding: 2rem 0;
-  }
-  input {
-    background: rgb(187, 194, 255,0.2);
-    font-family: "Heebo";
-    font-size: 1.2vw;
-    color: white;
-    border: none;
-    position: relative;
-  }
-  input::after {
-    position: absolute;
-    right: 100%;
-    bottom: 0.14em;
-    left: 0;
-    content: "";
-    transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
-    border-top: 5px solid rgb(33, 60, 238);
-  }
-  input:hover::after {
-    right: 0;
-  }
-  input::placeholder, textarea::placeholder {
-    color: white;
-    font-family: "Heebo";
-  }
-  input:focus,textarea:focus{
-      background:rgb(187, 194, 255) ;
-      
-  }
-  input:focus{
-      color: rgb(50, 50, 50);
-      font-weight: 500;
-  }
-  
-  input,
-  textarea:focus-visible {
-    outline: none;
-  }
-  textarea {
-    background: rgb(187, 194, 255,0.2);
-    width: 39vw;
-    color: #ffffff;
-    height: 9vw;
-    font-size: 1.2vw;
-    border: none;
-    padding: 0.5rem;
-    font-family: "Heebo";
-    resize: none;
-  }
-  textarea:focus{
-      color: rgb(50, 50, 50);
-      font-weight: 500;
-  }
+  padding: 5rem 0 2rem;
+  overflow: hidden;
+}
 
-  textarea::-webkit-scrollbar{
-    display: none;
-  }
-  form .name {
-    height: 3.2vw;
-    width: 18vw;
-    padding: 0.4rem;
-  }
-  form .email {
-    height: 3.2vw;
-    width: 18vw;
-    padding: 0.4rem;
-  }
-  form .submitBtn {
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
-    background: rgb(33, 60, 238);
-    border-radius: 10px;
-    font-family: "Heebo";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.7vw;
-    line-height: 29px;
-    padding: 1rem 1.5rem;
-    color: #ffffff;
-    user-select: none;
-    border: none;
-    transition: transform 0.2s ease;
-    margin: 2rem 0;
-    /* width: 12vw; */
-  }
-  form .submitBtn:active {
-    transform: scale(0.96);
-  }
+.contactUs h3 {
+  text-align: center;
+  color: #efefef;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6vw;
+  margin-bottom: 2rem;
+}
+
+.contactUs p {
+  color: #efefef;
+  font-family: "Heebo";
+  font-size: 1.5vw;
+}
+.contactUsCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+
+.contactUsCont .pic {
+  width: 40vw;
+  /* padding-top: 4rem; */
+}
+
+form {
+  padding: 8rem 0;
+}
+form .textFields {
+  /* display: flex;  */
+  /* gap: 2vw; */
+  padding: 2rem 0;
+}
+.textFields .input {
+  width: 100%;
+  margin-bottom: 2.3rem;
+}
+.input .title {
+  color: #efefef;
+  /* margin-bottom: 0.6rem; */
+  text-align: left;
+  font-weight: 400;
+  font-family: "Heebo";
+  font-size: 2vw;
+}
+input {
+  background: transparent;
+  font-family: "Heebo";
+  font-size: 1.2vw;
+  color:  rgba(230, 230, 230, 0.6);;
+  border: none;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid rgba(230, 230, 230, 0.6);
+}
+input::after {
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  content: "";
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+  border-top: 5px solid rgb(33, 60, 238);
+}
+input:hover::after {
+  right: 0;
+}
+input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-family: "Heebo";
+}
+
+
+
+input,
+textarea:focus-visible {
+  outline: none;
+}
+textarea {
+  background: rgb(187, 194, 255, 0.2);
+  width: 39vw;
+  color: #ffffff;
+  height: 9vw;
+  font-size: 1.2vw;
+  border: none;
+  padding: 0.5rem;
+  font-family: "Heebo";
+  resize: none;
+}
+textarea:focus {
+  color: rgb(50, 50, 50);
+  font-weight: 500;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+form .name {
+  height: 3.2vw;
+  width: 33vw;
+  padding:0.4rem 0.4rem 0;
+}
+form .email {
+  height: 3.2vw;
+  width: 33vw;
+  padding:0.4rem 0.4rem 0;
+}
+form .submitBtn {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  background: rgb(33, 60, 238);
+  border-radius: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 29px;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  user-select: none;
+  border: none;
+  transition: transform 0.2s ease;
+  margin: 2rem 0;
+  /* width: 12vw; */
+}
+form .submitBtn:active {
+  transform: scale(0.96);
+}
