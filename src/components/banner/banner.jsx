@@ -46,7 +46,7 @@ function Banner() {
   },[]);
 
   function onButtonClick() {
-    console.log("hello");
+   
     fetch("Resume.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
@@ -54,8 +54,10 @@ function Banner() {
         alink.href = fileURL;
         alink.download = "Resume.pdf";
         alink.click();
+        console.log(fileURL);
       });
     });
+   
   }
   return (
     <div className={s.container}>

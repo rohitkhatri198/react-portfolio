@@ -7,13 +7,13 @@ function Nav() {
         <a href="/">
           <div className={s.navItems}>Home</div>
         </a>
-        <a href="/about">
+        <a href="#about">
           <div className={s.navItems}>About</div>
         </a>
-        <a href="/projects">
+        <a href="#projects">
           <div className={s.navItems}>Projects</div>
         </a>
-        <a href="/contact">
+        <a href="#contact">
           <div className={s.navItems}>Contact</div>
         </a>
       </div>

@@ -28,7 +28,7 @@ function About() {
                 that matches my skills and experience then don't hesitate to
                 contact me.
               </p>
-              <a href="/Contact" data-aos="fade-right" data-aos-delay="900">
+              <a href="#contact" data-aos="fade-right" data-aos-delay="900">
                 <button className={s.contact}>Contact</button>
               </a>
             </div>
